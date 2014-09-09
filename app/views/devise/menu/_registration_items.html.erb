@@ -1,0 +1,12 @@
+<!-- This menu folder and file was created in order to add dynamic sign in/sign out and register/edit profile links per this guide: 
+https://github.com/plataformatec/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template -->
+
+<% if user_signed_in? %>
+  <li>
+  <%= link_to('Edit registration', edit_user_registration_path) %>
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Register', new_user_registration_path)  %>
+  </li>
+<% end %>

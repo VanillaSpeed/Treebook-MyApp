@@ -24,6 +24,13 @@
         <p class="alert"><%= alert %></p>
 	<%= yield %>
 	</div>
+	<div class="container"><br />
+		<ul class="hmenu nav pull-right">
+			<li><%= render 'devise/menu/registration_items' %></li>
+			<li><%= render 'devise/menu/login_items' %></li>
+		</ul>
+
+	</div>
 		
 </body>
 </html>
